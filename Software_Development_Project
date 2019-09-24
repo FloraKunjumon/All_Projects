@@ -1,0 +1,36 @@
+//Flora Kunjumon
+
+package com.inFile;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns = "/login.do")
+
+public class LoginServlet extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException{
+		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+		
+	}
+
+}
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http--equiv="Content-Type" content="text/html"; charset-UTF-8">
+<title>Huray!! From JSP</title>
+</head>
+<body>
+JSP File
+</body>
+</html>
